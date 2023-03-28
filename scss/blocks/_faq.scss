@@ -1,0 +1,32 @@
+.faq {
+	margin-top: 150px;
+	margin-bottom: 150px;
+	&__container {
+		padding: 0 155px;
+		@include tablet {
+			padding: 0 20px;
+		}
+		@include mobile {
+			margin-top: 48px;
+		}  
+	}
+	@include mobile {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }  
+
+	&__title {
+		@include text($ffAdd, 700, 46px, 56px, $darkBlue);
+		text-align: center;
+		margin-bottom: 51px;
+		@include mobile {
+            font-size: 32px;
+        }  
+	}
+
+	&__list {
+		display: grid;
+		gap: 20px;
+	}
+
+}

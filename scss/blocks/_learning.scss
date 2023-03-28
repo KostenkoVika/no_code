@@ -1,0 +1,120 @@
+.learning {
+    max-width: 1120px;
+
+    &__title {
+       text-align: center;
+       @include text($ffAdd, 700, 46px, 1.6, $darkBlue);
+       margin-bottom: 20px;
+       @include mobile {
+        font-size: 32px;
+    }  
+    }
+
+    &__desc {
+        margin-bottom: 61px;
+        margin-inline: auto;
+        max-width: 560px;
+        text-align: center;
+        @include text($ffMain, 400, 20px, 1.6, $darkGreyBlue);
+    }
+
+    &__list {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+   
+}
+.item {
+    width: 100%;
+    
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    background: rgba(205, 16, 255, 0.05);
+    border-radius: $radius;
+   
+   
+    @include tablet {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 15px;
+        gap: 5px;
+    }
+		
+
+    &__module {
+        display: inline-block;
+    }
+
+   
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-right: 50px;
+
+    @include tablet {
+       
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+       
+    }
+		
+
+    &__title {
+        padding: 20px;
+        @include text($ffMain, 700, 24px, 1.2, $darkBlue);
+        @include tablet {
+            padding-top: 0 ;
+        }
+
+
+     
+    }
+
+    &__decs {
+        padding-right:  20px;
+        max-width: 500px;
+        @include text($ffMain, 400, 16px, 1.8, $darkGreyBlue);
+        @include tablet {
+            padding-right:  0;
+            min-width: 350px;
+            text-align: center;
+           
+        }
+
+        @include mobile {
+            min-width: 250px;
+           
+           
+        }
+
+
+
+       
+
+    }
+}
+.counter {
+    max-width: 278px;
+    padding: 23px 30px;
+    background: $purpleGrad;
+    border-radius: $radiusRound;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+  
+       &__hours {
+        @include text($ffMain, 600, 16px, 1, $white);
+    }
+}
